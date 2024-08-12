@@ -23,12 +23,16 @@ def main():
                 
                 dexcheck_url = f"https://dexcheck.ai/app/wallet-analyzer/{clipboard_content}"
                 solscan_url = f"https://solscan.io/account/{clipboard_content}#balanceChanges"
-                
-                print(f"Opening URL: {dexcheck_url}")
-                webbrowser.open(dexcheck_url)  # Opens the Dexcheck URL in the default browser
+                cielo_url = f"https://app.cielo.finance/profile/{clipboard_content}/pnl/tokens?timeframe=max"
                 
                 print(f"Opening URL: {solscan_url}")
                 webbrowser.open(solscan_url)  # Opens the Solscan URL in the default browser
+
+                print(f"Opening URL: {dexcheck_url}")
+                webbrowser.open(dexcheck_url)  # Opens the Dexcheck URL in the default browser
+
+                print(f"Opening URL: {cielo_url}")
+                webbrowser.open(cielo_url)
             else:
                 print("Invalid wallet address")
 
@@ -36,3 +40,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+    
