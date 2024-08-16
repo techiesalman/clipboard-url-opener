@@ -23,7 +23,7 @@ def main():
                 
                 dexcheck_url = f"https://dexcheck.ai/app/wallet-analyzer/{clipboard_content}"
                 solscan_url = f"https://solscan.io/account/{clipboard_content}#balanceChanges"
-                cielo_url = f"https://app.cielo.finance/profile/{clipboard_content}/pnl/tokens?timeframe=max"
+                cielo_url = f"https://app.cielo.finance/profile/{clipboard_content}/pnl/tokens?timeframe=30d"
                 
                 print(f"Opening URL: {solscan_url}")
                 webbrowser.open(solscan_url)  # Opens the Solscan URL in the default browser
